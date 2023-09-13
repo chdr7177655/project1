@@ -1,0 +1,66 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 200px;
+    border: 10px solid rgb(163, 92, 160);
+    background-color: rgb(0, 0, 0);
+    background-size: 100% 100%;
+    margin: auto;
+    width: 21%;
+    padding: 17px;
+}
+
+.cell {
+    width: 80%;
+    height: 80px;
+    background-color: rgb(194, 104, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    border: 5px solid rgb(155, 12, 238);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin: auto;
+    width: 25%;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.button {
+    font-size: 20px;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(144, 93, 160);
+
+}
+
+.button:hover {
+    background-color: #520133
+}
+
+.button:active {
+    background-color: #fc00a8;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+body {
+    text-align: center;
+    background-image: url(https://site.clap-lab.com/wp-content/uploads/2021/10/Tic-Tac-Toe.png);
+}
