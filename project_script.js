@@ -94,7 +94,7 @@ function switchToPlayerVsPlayer() {
 
 var isVsComputer = false;
 
-// Function to switch to player vs. computer mode
+
 function switchToPlayerVsComputer() {
     isVsComputer = true;
     for (var i = 0; i < boardCells.length; i++) {
@@ -102,7 +102,7 @@ function switchToPlayerVsComputer() {
     }
 }
 
-// Function to handle cell click in player vs. computer mode
+
 function cellClickedVsComputer() {
     if (this.textContent !== '' || !isVsComputer) return;
 
@@ -131,11 +131,11 @@ function cellClickedVsComputer() {
 
     currentPlayer = 'O';
 
-    // Computer player's move (random cell)
+    
     setTimeout(computerMove, 500);
 }
 
-// Function for computer's move (random cell)
+
 function computerMove() {
     if (!isVsComputer || currentPlayer !== 'O') return;
 
@@ -176,7 +176,7 @@ function computerMove() {
     }
 }
 
-// Add an event listener for the vsComputerButton
+
 document.getElementById('vsPlayerButton').addEventListener('click', switchToPlayerVsPlayer);
 document.getElementById('vsComputerButton').addEventListener('click', switchToPlayerVsComputer);
 
